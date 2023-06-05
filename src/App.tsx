@@ -4,7 +4,7 @@ import MyRoutes from "./routes/MyRoutes";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="">
+      <div className="overflow-hidden">
         <MyRoutes />
       </div>
     </BrowserRouter>

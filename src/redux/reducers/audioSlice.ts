@@ -1,18 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface AudioState {
-  menuDisplay: boolean;
+  isPlaying: boolean;
+  progress: number;
 }
 
 const initialState: AudioState = {
-  menuDisplay: false,
+  isPlaying: false,
+  progress: 0,
 };
 
 const audioSlice = createSlice({
   name: "audio",
   initialState,
-  reducers: {},
+  reducers: {
+    play: (state, action) => {
+      state.isPlaying = action.payload;
+    },
+    updateProgress: (state, action) => {
+      state.progress = action.payload;
+    },
+  },
 });
 
-// export const {  } = audioSlice.actions;
+export const {  play, updateProgress } = audioSlice.actions;
 export default audioSlice.reducer;
