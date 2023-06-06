@@ -41,6 +41,7 @@ const Aside = () => {
               href="/"
               className="flex items-center justify-center w-4 h-4 mx-auto"
             >
+              <span className="sr-only">twitter link</span>
               <i className="fa-brands fa-twitter text-stone-300"></i>
             </a>
           </li>
@@ -49,6 +50,7 @@ const Aside = () => {
               href="/"
               className="flex items-center justify-center w-4 h-4 mx-auto"
             >
+              <span className="sr-only">facebook link</span>
               <i className="fa-brands fa-facebook-f text-stone-300"></i>
             </a>
           </li>
@@ -57,6 +59,7 @@ const Aside = () => {
               href="/"
               className="flex items-center justify-center w-4 h-4 mx-auto"
             >
+              <span className="sr-only">instagram link</span>
               <i className="fa-brands fa-instagram text-stone-300"></i>
             </a>
           </li>
@@ -65,6 +68,7 @@ const Aside = () => {
               href="/"
               className="flex items-center justify-center w-4 h-4 mx-auto pl-1"
             >
+              <span className="sr-only">youtube link</span>
               <i className="fa-sharp fa-solid fa-play text-red-600"></i>
             </a>
           </li>

@@ -40,10 +40,12 @@ const AudioPlayer = () => {
         >
           {isPlaying ? (
             <>
+              <span className="sr-only">play</span>
               <i className="fa-sharp fa-solid fa-pause text-xl text-stone-200"></i>
             </>
           ) : (
             <>
+              <span className="sr-only">pause</span>
               <i className="fa-sharp fa-solid fa-play text-xl text-stone-200 pl-1"></i>
             </>
           )}

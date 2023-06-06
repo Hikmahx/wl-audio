@@ -29,6 +29,7 @@ const Header = () => {
         </div>
         <div className="flex items-center justify-center gap-20">
           <button className="text-white hidden lg:block">
+            <span className="sr-only">magnifying glass icon</span>
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
           <button
