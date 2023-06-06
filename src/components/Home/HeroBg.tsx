@@ -2,7 +2,6 @@ import React from "react";
 import five from "../../assets/5ive-person.png";
 import fiveMobile from "../../assets/5ive-person-mobile.png";
 import semiCircle from "../../assets/semi-circle.png";
-// import happy from "../../assets/Happy.png";
 import angle from "../../assets/Angle.png";
 import ellipse from "../../assets/Ellipse-3.png";
 import vector from "../../assets/Vector-1.png";
@@ -41,7 +40,7 @@ const HeroBg = () => {
         alt="gray semicircle"
         className="absolute bottom-40 lg:bottom-0 -right-[93px] lg:left-40 z-20 -rotate-90 lg:rotate-0"
       />
-      <img src={lilfive} alt="" className="absolute top-1/3 left-1/3" /> 
+      <img src={lilfive} alt="lil five text" className="absolute bottom-20 z-[30] inset-x-0 w-full" /> 
     </div>
   );
 };
