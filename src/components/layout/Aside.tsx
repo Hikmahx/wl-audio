@@ -13,7 +13,7 @@ const Aside = () => {
     <aside>
       <nav
         className={
-          "menu bg-zinc-800 py-8 fixed inset-0 right-1/3 min-h-screen h-auto overflow-y-scroll z-20 transition-all ease-in-out duration-500 overflow-hidden flex flex-col lg:justify-center lg:pb-36 " +
+          "menu bg-zinc-800 py-8 fixed inset-0 right-1/3 min-h-screen h-auto overflow-y-scroll z-50 transition-all ease-in-out duration-500 overflow-hidden flex flex-col lg:justify-center lg:pb-36 " +
           (menuDisplay
             ? "!translate-x-0 w-60 lg:w-[563px] px-7 bg-neutral-800 bg-opacity-50 backdrop-blur-md"
             : "w-0 lg:w-20")

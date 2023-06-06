@@ -14,7 +14,8 @@ const Header = () => {
   };
 
   return (
-      <header className=" flex items-start justify-between w-full lg:w-[calc(100%_-_80px)] lg:ml-auto lg:mr-0 mt-14 lg:mt-20 mx-8 lg:px-14 max-w-2xl lg:max-w-none md:mx-auto">
+    <>
+      <header className=" flex items-start justify-between w-full lg:w-[calc(100%_-_80px)] lg:ml-auto lg:mr-0 mt-14 lg:mt-20 mx-8 lg:px-14 max-w-2xl lg:max-w-none md:mx-auto z-[11]">
         <div className="">
           <div className="">
             <Link
@@ -46,6 +47,14 @@ const Header = () => {
           </button>
         </div>
       </header>
+      <div
+        onClick={() => dispatch(setMenuDisplay(false))}
+        className={
+          "screen -z-20 fixed inset-0 opacity-0 bg-white h-screen hidden transition-all " +
+          (menuDisplay ? " !z-40 !block" : "")
+        }
+      ></div>
+    </>
   );
 };
 
