@@ -1,6 +1,6 @@
-# Payroll System - A payment display application 
+# WL Audio - An audio application 
 
-This is the documentation for the Payroll System, an application that displays payment information for employees.
+This is the documentation for the WL Audio, an application that allows you to play audio.
 
 ## Table of Contents
 
