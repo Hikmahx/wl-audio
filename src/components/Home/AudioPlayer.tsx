@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { play, updateProgress } from "../../redux/reducers/audioSlice";
 import { RootState } from "../../redux/store";
@@ -25,6 +25,11 @@ const AudioPlayer = () => {
     const progressPercentage = (currentTime / audioDuration) * 100 || 0;
     dispatch(updateProgress(progressPercentage));
   };
+
+  useEffect(() => {
+    Math.round(progress) === 100 && dispatch(play(false));
+    // eslint-disable-next-line
+  }, [progress]);
 
   return (
     <>
